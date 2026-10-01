@@ -20,13 +20,71 @@
             background-color: red;
             cursor: pointer;
         }
+
+        a:link {
+            color: blue;
+            font-size: 20px;
+            text-decoration: none;
+        
+        }
+
+        a:visited {
+            color: orange;
+        }
+
+        #Interests li:nth-child(even){
+            color: red;
+            font-size: 20px;
+        }
+
+        #Interests li:nth-child(odd){
+            color: green;
+            font-size: 20px;
+        }
+
+        #para::before{
+            color: blue;
+            font-size: 20px;
+            margin-right: 10px;
+            content: "Before: ";
+        }
+
+        #About::after{
+            color: aqua;
+            font-size: 20px;
+            margin-left: 10px;
+            content: " After";
+        }
+        
     </style>
 </head>
 
 <body>
 
     <button>PRINT</button>
+    <br>
+    <a href="https://www.facebook.com" target="_blank">FACEBOOK</a><br>
+    <a href="https://www.youtube.com" target="_blank">YOUTUBE</a>
 
+    <ul id="Interests">
+        <li>Singing</li>
+        <li>Playing Guitar</li>
+        <li>Volleyball</li>
+        <li>Reading Books</li>
+        <li>Traveling</li>
+    </ul>
+
+    <p id="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Perferendis, ex saepe porro consequatur nemo ipsam nihil.
+        Reprehenderit tempora, enim ad delectus natus eveniet laudantium maxime dicta. 
+        Sit maiores placeat cumque.
+    </p>
+    <br></br>
+
+    <p id="About">
+        Hello my Name is Bibash Kumal
+    </p>
 </body>
 
 </html>
